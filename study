@@ -1,0 +1,5 @@
+・my_portfolioはアプリケーション名
+
+・mysiteのsettings.pyのINSTALLED_APPSに「'widget_tweaks',」と「my_portfolio」を追加する。
+「'widget_tweaks',」はテンプレートでフォームをレンダリングする時にcssクラスや属性を変更できるモジュールです。後で必要となるので先に追加をしておく。
+
