@@ -1,0 +1,86 @@
+{% load static %}
+
+<!doctype html>
+<html lang="ja">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Core Meta Data -->
+    <meta name="author" content="Takeshi Sasaki">
+    <meta name="description" content="WEB開発・デザイナーの佐々木 健史です。WEBに関するお悩みをお聞かせ下さい。課題解決に向けて全力で取り組ませて頂きます。お気軽にご連絡下さい。">
+    <meta name="keywords" content="デザイン,web,ホームページ,制作,サイト,ネット,グラフィック,デザイナー,フリーランス,エンジニア,HTML,CSS,JavaScript,Python,Django">
+
+    <!-- Open Graph Protcol -->
+    <meta property="og:title" content="Takeshi Sasaki | Web Developer & Designer">
+    <meta property="og:url" content="???">
+    <meta property="og:description" content="WEB開発・デザイナーの佐々木 健史です。WEBに関するお悩みをお聞かせ下さい。課題解決に向けて全力で取り組ませて頂きます。お気軽にご連絡下さい。">
+    <meta property="og:image" content="???>
+    <meta property="og:locale" content="ja_JP">
+    <meta property="og:site_name" content="Takeshi Sasaki | Web Developer & Designer">
+    <meta property="og:type" content="website">
+
+    <!-- Facebook -->
+    <meta property="fb:app_id" content="???">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@TakeshiSasaki72">
+    <meta name="twitter:creator" content="TakeshiSasaki72">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    <title>Takeshi Sasaki</title>
+
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  </head>
+
+<body>
+  <header>
+    <div id="menu-bar" class="menu">
+      <div id="menu-center">
+        <ul>
+          <li><a class="active" href="#home">HOME</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#skills">SKILLS</a></li>
+          <li><a href="#works">WORKS</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main>
+  {% block content %}
+  {% endblock %}
+    
+
+  </main>
+
+  <footer>
+  <p class="center font-white">&copy; 2020 Takeshi Sasaki</p>
+  </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- Popper.js first, then Bootstrap JS -->
+  
+
+    <div class="fabs">
+      <a id="icon-github" href="GitHubリンク" target="_blank" class="fab" tooltip="Git Hub"><i class="fab fa-github fa-2x"></i></a>
+      <a id="icon-twitter" href="twitterリンク" target="_blank" class="fab" tooltip="Twitter"><i class="fab fa-twitter-square fa-2x"></i></a>
+      <a id="icon-facebook" href="facebookリンク" target="_blank" class="fab" tooltip="Facebook"><i class="fab fa-facebook-square fa-2x"></i></a>
+      <div id="icon-share" class="fab" ><i class="fas fa-share-alt-square fa-3x"></i></div>
+    </div>
+
+    <!-- tooltip="Share" -->
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+    <script src="{% static 'js/index.js' %}"></script>
+</body>
+</html>
+
