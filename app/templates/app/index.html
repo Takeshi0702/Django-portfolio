@@ -1,5 +1,7 @@
 {% extends "app/base.html" %}
 
+{% load static %}
+
 {% block content %}
 
 
@@ -12,8 +14,7 @@
 
   <section id="about" class="about center font-white">
     <h2 class="navigation-font-size">ABOUT</h2>
-      <img class="img-profile" src="/static/img/profile_django_portfolio.jpg">
-      <!-- <img class="img-profile" src="{% static 'img/profile_django_portfolio.jpg' %}"> -->
+      <img class="img-profile" src="{% static 'img/profile_django_portfolio.jpg' %}">
       <p class="messages-font-size">学生時代の全てバスケットボールに注ぐ。<br>大学時代は関東大会優勝・全国大会(インカレ)3位・天皇杯を経験。<br>
       卒業後は料理人(パティシエ) & ホールスタッフを5年、<br>営業 (M&Aアドバイザー・生命保険(外資)・WEBコンサルタント etc) を6年経験。<br>現在は侍エンジニア塾でプログラミングを学習中。<br>どうぞお気軽にご連絡下さい。</p>
   </section>
@@ -22,7 +23,7 @@
     <h2 class="navigation-font-size">SKILL</h2>
       <div class="skill-itms-one messages-font-size">
         <div class="skill-item">
-          <img class="skill-box" src="photo/html.jpg"  height="100" hspace="50">
+          <img class="skill-box" src="{% static 'img/html_django_portfolio.jpg' %}"  height="100" hspace="50">
           <div class="language">HTML</div>
           <div class="star-rating">
             <div class="html-star-rating-front">★★★★★</div>
@@ -31,7 +32,7 @@
         </div>
 
         <div class="skill-item">
-          <img class="skill-box" src="photo/css.jpg"  height="100" hspace="50">
+          <img class="skill-box" src="{% static 'img/css_django_portfolio.jpg' %}"  height="100" hspace="50">
           <div class="language">CSS</div>
           <div class="star-rating">
             <div class="css-star-rating-front">★★★★★</div>
@@ -40,7 +41,7 @@
         </div>
 
         <div class="skill-item">
-          <img class="skill-box" src="photo/js.jpg"  height="100" hspace="50">
+          <img class="skill-box" src="{% static 'img/js_django_portfolio.jpg' %}"  height="100" hspace="50">
           <div class="language">JavaScript</div>
           <div class="star-rating">
             <div class="javaccript-star-rating-front">★★★★★</div>
@@ -51,7 +52,7 @@
 
       <div class="skill-itms-two messages-font-size">
         <div class="skill-item">
-          <img class="skill-box" src="photo/python.jpg"  height="102" hspace="50">
+          <img class="skill-box" src="{% static 'img/python_django_portfolio.jpg' %}"  height="102" hspace="50">
           <div class="language">Python</div>
           <div class="star-rating">
             <div class="python-star-rating-front">★★★★★</div>
@@ -60,7 +61,7 @@
         </div>
 
         <div class="skill-item">
-          <img class="skill-box" src="photo/dj.jpg"  height="100" hspace="50">
+          <img class="skill-box" src="{% static 'img/dj_django_portfolio.jpg' %}"  height="100" hspace="50">
           <div class="language">Django</div>
           <div class="star-rating">
             <div class="django-star-rating-front">★★★★★</div>
