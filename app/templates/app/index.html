@@ -72,45 +72,46 @@
   </section>
 
   <section id="works" class="works center font-black">
-    <h2 class="navigation-font-size">WORKS</h2>
-      <div class="works-itms-one">
-        <div>
-          <a href="???" target="_self">
-          <img class="works-itms-one" src="https://placehold.jp/150x150.png" hspace="50" alt="" >
-          </a>
-          <div>ダミー画像①</div>
-        </div>
-
-        <div>
-          <a href="???" target="_self">
-          <img class="works-itms-one" src="https://placehold.jp/150x150.png" hspace="50" alt="">
-          </a>
-          <div>ダミー画像②</div>
-        </div>
-
-        <div>
-          <a href="???" target="_self">
-          <img class="works-itms-one" src="https://placehold.jp/150x150.png" hspace="50" alt="">
-          </a>
-          <div>ダミー画像③</div>
-        </div>
+    <div class="container">
+      <h2 class="navigation-font-size">WORKS</h2>
+        <div class="works-itms-one">
+        <div class="row mb-5">
+          {% for work in work_data %}
+              <div class="col-6 col-md-3 mb-3 mt-sm-4">
+                  <div class="card work-thumbnail">
+                      {% if work.thumbnail %}
+                          <img class="work-img" src="{{ work.thumbnail.url }}" alt="">
+                      {% else %}
+                          <img class="work-img" src="{{ work.image.url }}" alt="">
+                      {% endif %}
+                      <div class="work-title text-center">
+                          <p class="mb-0">{{ work.title }}</p>
+                      </div>
+                      <a class="stretched-link work" href=""></a>
+                  </div>
+              </div>
+          {% endfor %}
       </div>
-
-      <div class="works-itms-two">
-        <div>
-          <a href="???" target="_self">
-          <img class="works-itms-two" src="https://placehold.jp/150x150.png" hspace="50" alt="">
-          </a>
-          <div>ダミー画像④</div>
-        </div>
-
-        <div>
-          <a href="???" target="_self">
-          <img class="works-itms-two" src="https://placehold.jp/150x150.png" hspace="50" alt="">
-          </a>
-          <div>ダミー画像⑤</div>
-        </div>
       </div>
+    </div>
+
+
+    <!-- <div class="container">
+      <h2 class="navigation-font-size">WORKS</h2>
+        <div class="works-itms-one">
+          {% for work in work_data %}
+            {% if work.thumbnail %}
+            <img class="works-itms-one" src="{{ work.thumbnail.url }}" hspace="50" alt="" >
+            {% else %}
+            <img class="works-itms-one" src="{{ work.image.url }}" hspace="50" alt="" >
+            {% endif %}
+            <div class="work-title">
+              <p>{{ work.title }}</p>
+            </div>
+          {% endfor %}
+        </div>
+    </div> -->
+
   </section>
 
   <section id="contact" class="contact font-white contact-height">
