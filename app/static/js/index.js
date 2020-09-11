@@ -10,7 +10,7 @@ window.addEventListener( "scroll" ,function(){
     document.getElementById("icon-twitter").style.backgroundColor = "rgb(253 253 253 / 30%)";
     document.getElementById("icon-github").style.backgroundColor = "rgb(253 253 253 / 30%)";
   }else if( scroll > 2250 ){
-    document.body.style.backgroundColor = "#EEEEEE";
+    document.body.style.backgroundColor = "#FFFFFF";
     document.getElementById("menu-bar").style.backgroundColor = "black";
     document.getElementById("icon-share").style.backgroundColor = "rgba(0 0 0 / 40%)";
     document.getElementById("icon-facebook").style.backgroundColor = "rgba(0 0 0 / 40%)";

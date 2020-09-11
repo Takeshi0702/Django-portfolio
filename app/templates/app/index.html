@@ -15,8 +15,7 @@
   <section id="about" class="about center font-white">
     <h2 class="navigation-font-size">ABOUT</h2>
       <img class="img-profile" src="{% static 'img/profile_django_portfolio.jpg' %}">
-      <p class="messages-font-size">学生時代の全てバスケットボールに注ぐ。<br>大学時代は関東大会優勝・全国大会(インカレ)3位・天皇杯を経験。<br>
-      卒業後は料理人(パティシエ) & ホールスタッフを5年、<br>営業 (M&Aアドバイザー・生命保険(外資)・WEBコンサルタント etc) を6年経験。<br>現在は侍エンジニア塾でプログラミングを学習中。<br>どうぞお気軽にご連絡下さい。</p>
+      <p class="messages-font-size">{{ profile_data.introduction|linebreaksbr }}</p>
   </section>
 
   <section id="skills" class="skill center font-white">
@@ -116,7 +115,7 @@
 
   <section id="contact" class="contact font-white contact-height">
     <h2 class="navigation-font-size">CONTACT</h2>
-      <p class="contact-comment messages-font-size">WEBに関するお悩みをお聞かせ下さい。<br>課題解決に向けて全力で取り組ませて頂きます。<br>お気軽にご連絡下さい。</p>
+      <p class="contact-comment messages-font-size">{{ profile_data.job|linebreaksbr }}</p>
       <a href="???" target="_self" class="contact-messages"><i class="fas fa-envelope"> MESSAGE ME</i></a>
   </section>
 
