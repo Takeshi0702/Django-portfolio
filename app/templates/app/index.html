@@ -3,7 +3,20 @@
 {% load static %}
 
 {% block content %}
-
+<div class="home-background">
+<header>
+  <div id="menu-bar" class="menu">
+    <div id="menu-center">
+      <ul>
+        <li><a class="active" href="#home">HOME</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#skills">SKILLS</a></li>
+        <li><a href="#works">WORKS</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</header>
 
 <article class="color">
 
@@ -115,10 +128,10 @@
 
   <section id="contact" class="contact font-white contact-height">
     <h2 class="navigation-font-size">CONTACT</h2>
-      <p class="contact-comment messages-font-size">{{ profile_data.job|linebreaksbr }}</p>
+      <p class="contact-comment messages-font-size">{{ profile_data.contact|linebreaksbr }}</p>
       <a href="{% url 'contact' %}" target="_self" class="contact-messages"><i class="fas fa-envelope"> MESSAGE ME</i></a>
   </section>
 
 </article>
-
+</div>
 {% endblock %}

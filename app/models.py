@@ -5,6 +5,7 @@ class Profile(models.Model):
     subtitle = models.CharField('サブタイトル', max_length=100, null=True, blank=True)
     name = models.CharField('名前', max_length=100)
     job = models.TextField('仕事')
+    contact = models.TextField('コンタクト')
     introduction = models.TextField('自己紹介')
     topimage = models.ImageField(upload_to='images', verbose_name='トップ画像')
     subimage = models.ImageField(upload_to='images', verbose_name='サブ画像')

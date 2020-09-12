@@ -1,7 +1,17 @@
-{% extends "app/index.html" %}
+{% extends "app/base.html" %}
 {% load widget_tweaks %}
 
 {% block content %}
+<div class="contact-background">
+<header>
+    <div id="menu-bar" class="menu">
+    <div id="menu-center">
+        <ul>
+        <li><a href="/">HOME</a></li>
+        </ul>
+    </div>
+    </div>
+</header>
 
 <div class="card text-center contacts mx-auto rounded">
     <div class="card-body">
@@ -23,5 +33,5 @@
         </form>
     </div>
 </div>
-
+</div>
 {% endblock %}
