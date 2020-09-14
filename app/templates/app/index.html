@@ -3,7 +3,7 @@
 {% load static %}
 
 {% block content %}
-<div class="home-background">
+<!-- <div class="home-background"> -->
 <header>
   <div id="menu-bar" class="menu">
     <div id="menu-center">
@@ -107,23 +107,6 @@
       </div>
     </div>
 
-
-    <!-- <div class="container">
-      <h2 class="navigation-font-size">WORKS</h2>
-        <div class="works-itms-one">
-          {% for work in work_data %}
-            {% if work.thumbnail %}
-            <img class="works-itms-one" src="{{ work.thumbnail.url }}" hspace="50" alt="" >
-            {% else %}
-            <img class="works-itms-one" src="{{ work.image.url }}" hspace="50" alt="" >
-            {% endif %}
-            <div class="work-title">
-              <p>{{ work.title }}</p>
-            </div>
-          {% endfor %}
-        </div>
-    </div> -->
-
   </section>
 
   <section id="contact" class="contact font-white contact-height">
@@ -132,6 +115,13 @@
       <a href="{% url 'contact' %}" target="_self" class="contact-messages"><i class="fas fa-envelope"> MESSAGE ME</i></a>
   </section>
 
+  <div class="fabs">
+    <a id="icon-github" href="GitHubリンク" target="_blank" class="fab" tooltip="Git Hub"><i class="fab fa-github fa-2x"></i></a>
+    <a id="icon-twitter" href="twitterリンク" target="_blank" class="fab" tooltip="Twitter"><i class="fab fa-twitter-square fa-2x"></i></a>
+    <a id="icon-facebook" href="facebookリンク" target="_blank" class="fab" tooltip="Facebook"><i class="fab fa-facebook-square fa-2x"></i></a>
+    <div id="icon-share" class="fab" ><i class="fas fa-share-alt-square fa-3x"></i></div>
+  </div>
+
 </article>
-</div>
+<!-- </div> -->
 {% endblock %}
