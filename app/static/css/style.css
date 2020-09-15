@@ -236,8 +236,10 @@ a {
   transition-delay: 0s;
 }
 
-a.contact-messages:hover{
-  color: white; background-color: black;
+.contact-messages:hover{
+  color: white; 
+  background:black;
+  background-color: black;
 }
 
 /* .contact-height{        $一度検討[MESSAEG ME]の高さの幅 88vh の代わり
@@ -466,10 +468,23 @@ box-shadow: 0 0 4px rgba(0, 0, 0, .14), 0 4px 8px rgba(0, 0, 0, .28);
   border: none;
 }
 
-/* .home-logo{
-  align-items: flex-start;
-} */
-
 .rounded{
   border-radius: 2rem!important;
+}
+
+.btn-warning {
+  color: #000000;
+  background-color: #ffffff;
+  border-color: #000000;
+}
+
+.btn-warning:hover {
+  color: #ffffff;
+  background-color: #000000;
+  border-color: #000000;
+}
+
+.btn{
+  border-radius: 2rem;
+  font-weight: bolder;
 }
