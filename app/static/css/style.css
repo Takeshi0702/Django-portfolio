@@ -178,6 +178,12 @@ a {
   margin: 50px;
 }
 
+.skill-itms-three{
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+}
+
 .contact-comment{
   margin: 40px;
 }
@@ -303,6 +309,44 @@ ul{
   color: #ffffff;
   width: 10%;
 }
+
+
+.basketball-star-rating-front{
+  position: absolute;
+	top: 0;
+	left: 0;
+  overflow: hidden;
+  color: #ffffff;
+  width: 100%;
+}
+
+.patissier-star-rating-front{
+  position: absolute;
+	top: 0;
+	left: 0;
+  overflow: hidden;
+  color: #ffffff;
+  width: 100%;
+}
+
+.business-star-rating-front{
+  position: absolute;
+	top: 0;
+	left: 0;
+  overflow: hidden;
+  color: #ffffff;
+  width: 100%;
+}
+
+.childcare-star-rating-front{
+  position: absolute;
+	top: 0;
+	left: 0;
+  overflow: hidden;
+  color: #ffffff;
+  width: 30%;
+}
+
 
 .star-rating-back {
 	color: #ffffff;
