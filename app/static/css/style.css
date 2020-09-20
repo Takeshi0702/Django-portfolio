@@ -25,14 +25,16 @@ html{
   width: 100%;
 }
 
-ul{
-  padding-left: 1rem;
-  padding-right: 1rem;
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 700;
+  line-height: 1.2;
 }
 
 .menu{
   width: 100%;
-  height: 70px;
+  height: 60px;
   display: flex;
   justify-content: center;
 }
@@ -50,7 +52,7 @@ ul{
 
 
 #menu-center ul {
-  margin: 6px 0 0 0;
+  padding: 4px;
 }
 
 #menu-center ul li {
@@ -92,24 +94,24 @@ a {
 }
 
 .top {
-  padding: 250px 0;
+  padding: 220px 0 280px 0;
 }
 
 .about{
-  padding: 100px  0;
+  padding: 60px  0 110px 0;
   
 }
 
 .skill{
-  padding: 100px 0;
+  padding: 60px 0 110px 0;
 }
 
 .works{
-  padding: 110px 0 140px;
+  padding: 60px 0 0 0;
 }
 
 .contact{
-  padding : 220px 0 130px;
+  padding : 210px 0 140px 0;
   text-align: center;
   /* min-height: 0vh; */
 }
@@ -127,17 +129,21 @@ a {
 }
 
 .navigation-font-size{
-  font-size: 60px;
+  font-size: 70px;
 }
 
 .messages-font-size{
-  font-size: 20px;
-  line-height: 40px;
+  font-size: 24px;
+  line-height: 48px;
+}
+
+.messages-font-size-skills{
+  line-height: 30px;
 }
 
 .language{
-  font-size: 25px;
-  padding : 5px;
+  font-size: 20px;
+  padding : 3px 0 0 0;
 }
 
 .title{
@@ -145,7 +151,7 @@ a {
 }
 
 .subtitle{
-  font-size: 30px;
+  font-size: 36px;
 }
 
 .works-itms-one{
@@ -173,23 +179,23 @@ a {
 .skill-itms-one{
   display: flex;
   justify-content: center;
-  margin: 50px;
+  margin: 30px;
 }
 
 .skill-itms-two{
   display: flex;
   justify-content: center;
-  margin: 50px;
+  margin: 30px;
 }
 
 .skill-itms-three{
   display: flex;
   justify-content: center;
-  margin: 50px;
+  margin: 30px;
 }
 
 .contact-comment{
-  margin: 40px;
+  margin: 20px 0 20px 0;
 }
 
 .contact-messages{
@@ -265,7 +271,7 @@ ul{
 
 .star-rating {
 	position: relative;
-	font-size: 25px;
+	font-size: 20px;
 	word-wrap: normal !important;
 }
 
@@ -379,8 +385,8 @@ ul{
   margin: 0px auto 0px;
   box-shadow: 0px 5px 11px -2px rgba(0, 0, 0, 0.18), 0px 4px 12px -7px rgba(0, 0, 0, 0.15);
   cursor: pointer;
-  -webkit-transition-: all .1s ease-out;
-  /* transition: all .1s ease-out; */
+  /* -webkit-transition-: all .1s ease-out; */
+  transition: all 0.07s ease-out;
   position: relative;
 }
 
@@ -448,16 +454,16 @@ box-shadow: 0 0 4px rgba(0, 0, 0, .14), 0 4px 8px rgba(0, 0, 0, .28);
   -webkit-border-radius: 100px;
   -moz-border-radius: 100px;
   border-radius: 100px;
-  background-color: white;
-  color: black;
+  background-color: rgba(0 0 0 / 40%);
+  color: white;
   content: attr(tooltip);
   font-size: 12px;
   visibility: hidden;
   opacity: 0;
   padding: 5px 7px;
-  margin-right: 15px;
+  margin: 0px -60px 56px 0px;
   position: absolute;
-  right: 100%;
+  right: 95%;
   bottom: 5%;
   white-space: nowrap;
 }
@@ -467,8 +473,6 @@ box-shadow: 0 0 4px rgba(0, 0, 0, .14), 0 4px 8px rgba(0, 0, 0, .28);
   visibility: visible;
   opacity: 1;
 }
-
-
 
 .work-thumbnail {
   overflow: hidden;
@@ -536,3 +540,16 @@ box-shadow: 0 0 4px rgba(0, 0, 0, .14), 0 4px 8px rgba(0, 0, 0, .28);
   border-radius: 2rem;
   font-weight: bolder;
 }
+
+
+@media screen and (max-width: 768px) {
+.font-small{ 
+  font-size: 5px;
+}
+}
+
+.contact-menu{
+  font-size: 20px;
+  line-height: 52px;
+}
+
