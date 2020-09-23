@@ -541,6 +541,10 @@ box-shadow: 0 0 4px rgba(0, 0, 0, .14), 0 4px 8px rgba(0, 0, 0, .28);
   font-weight: bolder;
 }
 
+.contact-menu{
+  font-size: 20px;
+  line-height: 52px;
+}
 
 @media screen and (max-width: 768px) {
 .font-small{ 
@@ -566,8 +570,28 @@ box-shadow: 0 0 4px rgba(0, 0, 0, .14), 0 4px 8px rgba(0, 0, 0, .28);
 }
 }
 
-.contact-menu{
-  font-size: 20px;
-  line-height: 52px;
+
+@media screen and (max-width: 768px) {
+.title{ 
+  font-size: 70px;
+}
+}
+  
+@media screen and (max-width: 480px) {
+.title{ 
+  font-size: 54px;
+}
+}
+
+@media screen and (max-width: 768px) {
+.subtitle{ 
+  font-size: 28px;
+}
+}
+  
+@media screen and (max-width: 480px) {
+.subtitle{ 
+  font-size: 22px;
+}
 }
 
