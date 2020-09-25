@@ -27,3 +27,11 @@ class Work(models.Model):
         return self.title
 
         
+class Skills(models.Model):
+    thumbnail = models.ImageField(upload_to='images', verbose_name='サムネイル', null=True, blank=True)
+    name = models.CharField('テクニカル', max_length=100)
+    percentage = models.IntegerField('パーセンテージ')
+    
+    def __str__(self):
+        return self.name
+
