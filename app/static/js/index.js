@@ -2,21 +2,21 @@ window.addEventListener( "scroll" ,function(){
 
   let scroll = window.pageYOffset;
   
-  if( scroll > 3000 ){
+  if( scroll > 2600 ){
     document.body.style.backgroundColor = "#35DDCA";
     document.getElementById("menu-bar").style.backgroundColor = "rgb(255, 255, 255)";
     document.getElementById("icon-share").style.backgroundColor = "rgb(253 253 253 / 30%)";
     document.getElementById("icon-facebook").style.backgroundColor = "rgb(253 253 253 / 30%)";
     document.getElementById("icon-twitter").style.backgroundColor = "rgb(253 253 253 / 30%)";
     document.getElementById("icon-github").style.backgroundColor = "rgb(253 253 253 / 30%)";
-  }else if( scroll > 2250 ){
+  }else if( scroll > 2210 ){
     document.body.style.backgroundColor = "#FFFFFF";
     document.getElementById("menu-bar").style.backgroundColor = "black";
     document.getElementById("icon-share").style.backgroundColor = "rgba(0 0 0 / 40%)";
     document.getElementById("icon-facebook").style.backgroundColor = "rgba(0 0 0 / 40%)";
     document.getElementById("icon-twitter").style.backgroundColor = "rgba(0 0 0 / 40%)";
     document.getElementById("icon-github").style.backgroundColor = "rgba(0 0 0 / 40%)";
-  }else if( scroll > 1440 ){
+  }else if( scroll > 1250 ){
     document.body.style.backgroundColor = "#FFA866";
     document.getElementById("menu-bar").style.backgroundColor = "rgb(255, 255, 255)";
     document.getElementById("icon-share").style.backgroundColor = "rgb(253 253 253 / 30%)";

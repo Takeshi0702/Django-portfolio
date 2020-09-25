@@ -133,8 +133,8 @@ a {
 }
 
 .messages-font-size{
-  font-size: 24px;
-  line-height: 48px;
+  font-size: 21px;
+  line-height: 35px;
 }
 
 .messages-font-size-skills{
@@ -503,12 +503,17 @@ box-shadow: 0 0 4px rgba(0, 0, 0, .14), 0 4px 8px rgba(0, 0, 0, .28);
   opacity: 1;
 }
 
+.copy{
+  padding-top: 1rem!important;
+  padding-bottom: 0.3rem!important;
+  margin-bottom: 0;
+}
 
 /* contact */
 
 .contacts {
   max-width: 500px;
-  margin-top: 120px;
+  margin-top: 78px;
 }
 
 .form-control:focus {
@@ -544,6 +549,13 @@ box-shadow: 0 0 4px rgba(0, 0, 0, .14), 0 4px 8px rgba(0, 0, 0, .28);
 .contact-menu{
   font-size: 20px;
   line-height: 52px;
+}
+
+.messages-width{
+  width: 82%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 16px;
 }
 
 @media screen and (max-width: 768px) {
@@ -592,6 +604,50 @@ box-shadow: 0 0 4px rgba(0, 0, 0, .14), 0 4px 8px rgba(0, 0, 0, .28);
 @media screen and (max-width: 480px) {
 .subtitle{ 
   font-size: 22px;
+}
+}
+
+
+@media screen and (max-width: 768px) {
+.navigation-font-size{ 
+  font-size: 55px;
+}
+}
+  
+@media screen and (max-width: 480px) {
+.navigation-font-size{ 
+  font-size: 42px;
+}
+}
+
+@media screen and (max-width: 768px) {
+.img-profile{ 
+  width: 156px;
+  height: 156px;
+}
+}
+  
+@media screen and (max-width: 480px) {
+.img-profile{ 
+  width: 122px;
+  height: 122px;
+}
+}
+
+
+@media screen and (max-width: 768px) {
+.messages-font-size{ 
+  font-size: 16px;
+  line-height: 27px;
+  width: 99%;
+}
+}
+  
+@media screen and (max-width: 480px) {
+.messages-font-size{ 
+  font-size: 12px;
+  line-height: 21px;
+  width: 96%;
 }
 }
 
