@@ -21,39 +21,55 @@
 <article class="color">
 
   <section id="home" class="top center font-white">
-      <h1 class="title">{{ profile_data.title }}</h1>
-      <p class="subtitle">{{ profile_data.subtitle }}</p>
+    <h1 class="title">{{ profile_data.title }}</h1>
+    <p class="subtitle">{{ profile_data.subtitle }}</p>
   </section>
 
   <section id="about" class="about center font-white">
     <h2 class="navigation-font-size">ABOUT</h2>
-      <img class="img-profile" src="{% static 'img/profile_django_portfolio.jpg' %}">
-      <p class="messages-font-size messages-width">{{ profile_data.introduction|linebreaksbr }}</p>
+    <img class="img-profile" src="{% static 'img/profile_django_portfolio.jpg' %}">
+    <p class="messages-font-size messages-width">{{ profile_data.introduction|linebreaksbr }}</p>
   </section>
 
-  <section id="skills" class="skill center font-white">
+  <section id="skills" class="skill center font-white container">
     <h2 class="navigation-font-size">SKILLS</h2>
-
-
-
     <h3 class="mb-4 center">Technical Skills</h3>
     <div class="mb-5">
       <div class="row">
-          {% for technical in technical_data %}
-              <div class="col-6 col-md-3">
-                  <h5 class="mb-0">{{ technical.name }}<span class="small text-secondary"> - {{ technical.level }}</span></h5>
-                  <div class="d-flex flex-row">
-                      <div class="star-rating">
-                          <div class="star-rating-front" style="width: {{ technical.percentage }}%">★★★★★</div>
-                          <div class="star-rating-back">★★★★★</div>
-                      </div>    
-                  </div>
-              </div>
-          {% endfor %}
+        {% for technical in technical_data %}
+        <div class="col-6 col-md-3">
+          <img class="skill-box" src="{{technical.thumbnail.url}}" alt="">
+          <h5 class="mb-0">{{ technical.name }}</h5>
+          <div class="d-flex flex-row justify-content-center">
+            <div class="star-rating">
+              <div class="star-rating-front" style="width: {{ technical.percentage }}%">★★★★★</div>
+              <div class="star-rating-back">★★★★★</div>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
       </div>
     </div>
 
     <h3 class="mb-4 center">Self Skills</h3>
+    <div class="mb-5">
+      <div class="row">
+        {% for selfskill in selfskill_data %}
+        <div class="col-6 col-md-3">
+          <img class="skill-box" src="{{selfskill.thumbnail.url}}" alt="">
+          <h5 class="mb-0">{{ selfskill.name }}</h5>
+          <div class="d-flex flex-row justify-content-center">
+            <div class="star-rating">
+              <div class="star-rating-front" style="width: {{ selfskill.percentage }}%">★★★★★</div>
+              <div class="star-rating-back">★★★★★</div>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <!-- <h3 class="mb-4 center">Self Skills</h3>
     <div class="mb-5">
       <div class="row">
           {% for selfskill in selfskill_data %}
@@ -68,13 +84,13 @@
               </div>
           {% endfor %}
       </div>
-    </div>
+    </div> -->
 
 
 
 
 
-      <!-- <div class="skill-itms-one messages-font-size-skills">
+    <!-- <div class="skill-itms-one messages-font-size-skills">
         <div class="skill-item">
           <img class="skill-box" src="{% static 'img/html_django_portfolio.jpg' %}"  height="100" hspace="50">
           <div class="language">HTML</div>
@@ -157,24 +173,24 @@
   <section id="works" class="works center font-black">
     <div class="container">
       <h2 class="navigation-font-size">WORKS</h2>
-        <div class="works-itms-one">
+      <div class="works-itms-one">
         <div class="row mb-5">
           {% for work in work_data %}
-              <div class="col-6 col-md-3 mb-3 mt-sm-4">
-                  <div class="card work-thumbnail">
-                      {% if work.thumbnail %}
-                          <img class="work-img" src="{{ work.thumbnail.url }}" alt="">
-                      {% else %}
-                          <img class="work-img" src="{{ work.image.url }}" alt="">
-                      {% endif %}
-                      <div class="work-title text-center">
-                          <p class="mb-0">{{ work.title }}</p>
-                      </div>
-                      <a class="stretched-link work" href=""></a>
-                  </div>
+          <div class="col-6 col-md-3 mb-3 mt-sm-4">
+            <div class="card work-thumbnail">
+              {% if work.thumbnail %}
+              <img class="work-img" src="{{ work.thumbnail.url }}" alt="">
+              {% else %}
+              <img class="work-img" src="{{ work.image.url }}" alt="">
+              {% endif %}
+              <div class="work-title text-center">
+                <p class="mb-0">{{ work.title }}</p>
               </div>
+              <a class="stretched-link work" href=""></a>
+            </div>
+          </div>
           {% endfor %}
-      </div>
+        </div>
       </div>
     </div>
 
@@ -182,15 +198,18 @@
 
   <section id="contact" class="contact font-white contact-height">
     <h2 class="navigation-font-size">CONTACT</h2>
-      <p class="contact-comment messages-font-size">{{ profile_data.contact|linebreaksbr }}</p>
-      <a href="{% url 'contact' %}" target="_self" class="contact-messages"><i class="fas fa-envelope"> MESSAGE ME</i></a>
+    <p class="contact-comment messages-font-size">{{ profile_data.contact|linebreaksbr }}</p>
+    <a href="{% url 'contact' %}" target="_self" class="contact-messages"><i class="fas fa-envelope"> MESSAGE ME</i></a>
   </section>
 
   <div class="fabs">
-    <a id="icon-github" href="GitHubリンク" target="_blank" class="fab" tooltip="Git Hub"><i class="fab fa-github fa-2x"></i></a>
-    <a id="icon-twitter" href="twitterリンク" target="_blank" class="fab" tooltip="Twitter"><i class="fab fa-twitter-square fa-2x"></i></a>
-    <a id="icon-facebook" href="facebookリンク" target="_blank" class="fab" tooltip="Facebook"><i class="fab fa-facebook-square fa-2x"></i></a>
-    <div id="icon-share" class="fab" ><i class="fas fa-share-alt-square fa-3x"></i></div>
+    <a id="icon-github" href="GitHubリンク" target="_blank" class="fab" tooltip="Git Hub"><i
+        class="fab fa-github fa-2x"></i></a>
+    <a id="icon-twitter" href="twitterリンク" target="_blank" class="fab" tooltip="Twitter"><i
+        class="fab fa-twitter-square fa-2x"></i></a>
+    <a id="icon-facebook" href="facebookリンク" target="_blank" class="fab" tooltip="Facebook"><i
+        class="fab fa-facebook-square fa-2x"></i></a>
+    <div id="icon-share" class="fab"><i class="fas fa-share-alt-square fa-3x"></i></div>
   </div>
 
 </article>

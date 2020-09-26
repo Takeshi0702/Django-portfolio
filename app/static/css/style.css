@@ -170,6 +170,7 @@ a {
 
 .skill-box{
   border-radius:50%;
+  height: 100px;
 }
 
 .skill-item{
@@ -651,3 +652,21 @@ box-shadow: 0 0 4px rgba(0, 0, 0, .14), 0 4px 8px rgba(0, 0, 0, .28);
 }
 }
 
+
+.star-rating {
+	position: relative;
+	font-size: 30px;
+	word-wrap: normal !important;
+}
+
+.star-rating-front {
+	position: absolute;
+	top: 0;
+	left: 0;
+    overflow: hidden;
+    color: #EE6C4D;
+}
+
+.star-rating-back {
+	color: #ccc;
+}

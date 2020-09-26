@@ -14,9 +14,9 @@ class IndexView(View):
         if profile_data.exists():
             profile_data = profile_data.order_by("-id")[0]
         work_data = Work.objects.order_by("-id")
-        technical_data = Technical.objects.order_by("-id")[0]
-        software_data = Software.objects.order_by("-id")[0]
-        selfskill_data = Selfskill.objects.order_by("-id")[0]
+        technical_data = Technical.objects.all()
+        software_data = Software.objects.all()
+        selfskill_data = Selfskill.objects.all()
         return render(request, 'app/index.html', {
             'profile_data': profile_data,
             'work_data': work_data,
