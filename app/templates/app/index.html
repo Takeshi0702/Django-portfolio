@@ -33,7 +33,48 @@
 
   <section id="skills" class="skill center font-white">
     <h2 class="navigation-font-size">SKILLS</h2>
-      <div class="skill-itms-one messages-font-size-skills">
+
+
+
+    <h3 class="mb-4 center">Technical Skills</h3>
+    <div class="mb-5">
+      <div class="row">
+          {% for technical in technical_data %}
+              <div class="col-6 col-md-3">
+                  <h5 class="mb-0">{{ technical.name }}<span class="small text-secondary"> - {{ technical.level }}</span></h5>
+                  <div class="d-flex flex-row">
+                      <div class="star-rating">
+                          <div class="star-rating-front" style="width: {{ technical.percentage }}%">★★★★★</div>
+                          <div class="star-rating-back">★★★★★</div>
+                      </div>    
+                  </div>
+              </div>
+          {% endfor %}
+      </div>
+    </div>
+
+    <h3 class="mb-4 center">Self Skills</h3>
+    <div class="mb-5">
+      <div class="row">
+          {% for selfskill in selfskill_data %}
+              <div class="col-6 col-md-3">
+                  <h5 class="mb-0">{{ selfskill.name }}<span class="small text-secondary"> - {{ selfskill.level }}</span></h5>
+                  <div class="d-flex flex-row">
+                      <div class="star-rating">
+                          <div class="star-rating-front" style="width: {{ selfskill.percentage }}%">★★★★★</div>
+                          <div class="star-rating-back">★★★★★</div>
+                      </div>    
+                  </div>
+              </div>
+          {% endfor %}
+      </div>
+    </div>
+
+
+
+
+
+      <!-- <div class="skill-itms-one messages-font-size-skills">
         <div class="skill-item">
           <img class="skill-box" src="{% static 'img/html_django_portfolio.jpg' %}"  height="100" hspace="50">
           <div class="language">HTML</div>
@@ -109,7 +150,7 @@
             <div class="star-rating-back">☆☆☆☆☆</div>
           </div>
         </div>
-      </div>
+      </div> -->
 
   </section>
 

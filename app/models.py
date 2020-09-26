@@ -26,10 +26,28 @@ class Work(models.Model):
     def __str__(self):
         return self.title
 
-        
-class Skills(models.Model):
+
+class Technical(models.Model):
     thumbnail = models.ImageField(upload_to='images', verbose_name='サムネイル', null=True, blank=True)
     name = models.CharField('テクニカル', max_length=100)
+    percentage = models.IntegerField('パーセンテージ')
+    
+    def __str__(self):
+        return self.name
+
+        
+class Software(models.Model):
+    thumbnail = models.ImageField(upload_to='images', verbose_name='サムネイル', null=True, blank=True)
+    name = models.CharField('ソフトウェア', max_length=100)
+    percentage = models.IntegerField('パーセンテージ')
+    
+    def __str__(self):
+        return self.name
+
+
+class Selfskill(models.Model):
+    thumbnail = models.ImageField(upload_to='images', verbose_name='サムネイル', null=True, blank=True)
+    name = models.CharField('セルフスキル', max_length=100)
     percentage = models.IntegerField('パーセンテージ')
     
     def __str__(self):

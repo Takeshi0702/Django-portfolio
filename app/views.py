@@ -1,6 +1,6 @@
 from django.views.generic import View
 from django.shortcuts import render, redirect
-from .models import Profile, Work, Skills
+from .models import Profile, Work, Technical, Software, Selfskill
 from .forms import ContactForm
 from django.conf import settings
 from django.core.mail import BadHeaderError, EmailMessage
@@ -13,12 +13,16 @@ class IndexView(View):
         profile_data = Profile.objects.all()
         if profile_data.exists():
             profile_data = profile_data.order_by("-id")[0]
-        skills_data = Skills.objects.order_by("-id")[0]
         work_data = Work.objects.order_by("-id")
+        technical_data = Technical.objects.order_by("-id")[0]
+        software_data = Software.objects.order_by("-id")[0]
+        selfskill_data = Selfskill.objects.order_by("-id")[0]
         return render(request, 'app/index.html', {
             'profile_data': profile_data,
-            'skills_data': skills_data,
-            'work_data': work_data
+            'work_data': work_data,
+            'technical_data': technical_data,
+            'software_data': software_data,
+            'selfskill_data': selfskill_data
         })
 
 
