@@ -33,13 +33,13 @@
 
   <section id="skills" class="skill center font-white container">
     <h2 class="navigation-font-size">SKILLS</h2>
-    <h3 class="mb-4 center">Technical Skills</h3>
+    <div class="mb-4 center technical-skills">Technical Skills</div>
     <div class="mb-5">
       <div class="row">
         {% for technical in technical_data %}
         <div class="col-6 col-md-3">
           <img class="skill-box" src="{{technical.thumbnail.url}}" alt="">
-          <h5 class="mb-0">{{ technical.name }}</h5>
+          <h5 class="mb-0 language">{{ technical.name }}</h5>
           <div class="d-flex flex-row justify-content-center">
             <div class="star-rating">
               <div class="star-rating-front" style="width: {{ technical.percentage }}%">★★★★★</div>
@@ -51,7 +51,7 @@
       </div>
     </div>
 
-    <h3 class="mb-4 center">Self Skills</h3>
+    <h2 class="mb-4 center">Self Skills</h2>
     <div class="mb-5">
       <div class="row">
         {% for selfskill in selfskill_data %}
