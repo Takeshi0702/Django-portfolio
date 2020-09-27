@@ -32,18 +32,18 @@
   </section>
 
   <section id="skills" class="skill center font-white container">
-    <h2 class="navigation-font-size">SKILLS</h2>
-    <div class="mb-4 center technical-skills">Technical Skills</div>
-    <div class="mb-5">
+    <h2 class="navigation-font-size mb-2">SKILLS</h2>
+    <div class="mb-2 center technology-name">Technical Skills</div>
+    <div class="mb-3">
       <div class="row">
         {% for technical in technical_data %}
-        <div class="col-6 col-md-3">
-          <img class="skill-box" src="{{technical.thumbnail.url}}" alt="">
-          <h5 class="mb-0 language">{{ technical.name }}</h5>
+        <div class="col-6 col-md-3 skill-item">
+          <img class="skill-box" src="{{technical.thumbnail.url}}">
+          <h5 class="mb-0 technical-name">{{ technical.name }}</h5>
           <div class="d-flex flex-row justify-content-center">
             <div class="star-rating">
               <div class="star-rating-front" style="width: {{ technical.percentage }}%">★★★★★</div>
-              <div class="star-rating-back">★★★★★</div>
+              <div class="star-rating-back">☆☆☆☆☆</div>
             </div>
           </div>
         </div>
@@ -51,17 +51,17 @@
       </div>
     </div>
 
-    <h2 class="mb-4 center">Self Skills</h2>
-    <div class="mb-5">
+    <h2 class="mb-3 center technology-name">Self Skills</h2>
+    <!-- <div class="mb-5"> -->
       <div class="row">
         {% for selfskill in selfskill_data %}
-        <div class="col-6 col-md-3">
-          <img class="skill-box" src="{{selfskill.thumbnail.url}}" alt="">
-          <h5 class="mb-0">{{ selfskill.name }}</h5>
+        <div class="col-6 col-md-3 skill-item">
+          <img class="skill-box" src="{{selfskill.thumbnail.url}}">
+          <h5 class="mb-0 selfskill-name">{{ selfskill.name }}</h5>
           <div class="d-flex flex-row justify-content-center">
             <div class="star-rating">
               <div class="star-rating-front" style="width: {{ selfskill.percentage }}%">★★★★★</div>
-              <div class="star-rating-back">★★★★★</div>
+              <div class="star-rating-back">☆☆☆☆☆</div>
             </div>
           </div>
         </div>
