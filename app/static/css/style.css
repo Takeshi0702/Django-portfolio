@@ -143,12 +143,12 @@ a {
 }
 
 .technical-name{
-  font-size: 25px;
+  font-size: 1.5rem;
   padding : 8px 0 0 0;
 }
 
 .selfskill-name{
-  font-size: 22px;
+  font-size: 1.5rem;
   padding : 8px 0 0 0;
 }
 
@@ -168,7 +168,7 @@ a {
 }
 
 .img-profile{
-  margin: 30px;
+  margin: 25px 0 20px 0;
   width:200px;
 	height:200px;
 	object-fit:cover;
@@ -177,7 +177,7 @@ a {
 
 .skill-box{
   border-radius:50%;
-  height: 100px;
+  height: 6rem;
 }
 
 .skill-item{
@@ -566,6 +566,35 @@ box-shadow: 0 0 4px rgba(0, 0, 0, .14), 0 4px 8px rgba(0, 0, 0, .28);
   padding: 0 16px;
 }
 
+.star-rating {
+	position: relative;
+	font-size: 1.9rem;
+	word-wrap: normal !important;
+}
+
+.star-rating-front {
+	position: absolute;
+	top: 0;
+	left: 0;
+  overflow: hidden;
+  color: white;
+}
+
+.star-rating-back {
+	color:  white;
+}
+
+.technology-name{
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
 @media screen and (max-width: 768px) {
 .font-small{ 
   font-size: 18px;
@@ -645,40 +674,84 @@ box-shadow: 0 0 4px rgba(0, 0, 0, .14), 0 4px 8px rgba(0, 0, 0, .28);
 
 @media screen and (max-width: 768px) {
 .messages-font-size{ 
-  font-size: 16px;
-  line-height: 27px;
+  font-size: 1rem;
+  line-height: 1.5;
 }
 }
   
 @media screen and (max-width: 480px) {
 .messages-font-size{ 
-  font-size: 12px;
-  line-height: 21px;
+  font-size: 1rem;
+  line-height: 1.5;
 }
 }
 
 
-.star-rating {
-	position: relative;
-	font-size: 30px;
-	word-wrap: normal !important;
+@media screen and (max-width: 768px) {
+.technology-name{ 
+  font-size: 2.2rem!important;
+}
+}
+  
+@media screen and (max-width: 480px) {
+.technology-name{ 
+  font-size: 1.7rem!important;
+}
 }
 
-.star-rating-front {
-	position: absolute;
-	top: 0;
-	left: 0;
-  overflow: hidden;
-  color: white;
+
+@media screen and (max-width: 768px) {
+.skill-box{ 
+  height: 5.5rem;
+}
+}
+  
+@media screen and (max-width: 480px) {
+.skill-box{ 
+  height: 5rem;
+}
 }
 
-.star-rating-back {
-	color:  white;
+
+
+@media screen and (max-width: 768px) {
+.technical-name{ 
+  font-size: 1.4rem;
+}
+}
+  
+@media screen and (max-width: 480px) {
+.technical-name{ 
+  font-size: 1.1rem;
+}
 }
 
-.technology-name{
-  font-size: 40px;
-  font-weight: bold;
+
+
+@media screen and (max-width: 768px) {
+.star-rating{ 
+  font-size: 1.7rem;
 }
+}
+  
+@media screen and (max-width: 480px) {
+.star-rating{ 
+  font-size: 1.4rem;
+}
+}
+
+
+@media screen and (max-width: 768px) {
+.selfskill-name{ 
+  font-size: 1.2rem;
+}
+}
+  
+@media screen and (max-width: 480px) {
+.selfskill-name{ 
+  font-size: 1rem;
+}
+}
+
 
 
