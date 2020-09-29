@@ -3,7 +3,7 @@
 {% load static %}
 
 {% block content %}
-<!-- <div class="home-background"> -->
+
 <header>
   <div id="menu-bar" class="menu">
     <div id="menu-center">
@@ -52,7 +52,7 @@
     </div>
 
     <h2 class="mb-3 center technology-name">Self Skills</h2>
-    <!-- <div class="mb-5"> -->
+    <div class="mb-5">
       <div class="row">
         {% for selfskill in selfskill_data %}
         <div class="col-6 col-md-3 skill-item">
@@ -68,105 +68,6 @@
         {% endfor %}
       </div>
     </div>
-
-    <!-- <h3 class="mb-4 center">Self Skills</h3>
-    <div class="mb-5">
-      <div class="row">
-          {% for selfskill in selfskill_data %}
-              <div class="col-6 col-md-3">
-                  <h5 class="mb-0">{{ selfskill.name }}<span class="small text-secondary"> - {{ selfskill.level }}</span></h5>
-                  <div class="d-flex flex-row">
-                      <div class="star-rating">
-                          <div class="star-rating-front" style="width: {{ selfskill.percentage }}%">★★★★★</div>
-                          <div class="star-rating-back">★★★★★</div>
-                      </div>    
-                  </div>
-              </div>
-          {% endfor %}
-      </div>
-    </div> -->
-
-
-
-
-
-    <!-- <div class="skill-itms-one messages-font-size-skills">
-        <div class="skill-item">
-          <img class="skill-box" src="{% static 'img/html_django_portfolio.jpg' %}"  height="100" hspace="50">
-          <div class="language">HTML</div>
-          <div class="star-rating">
-            <div class="html-star-rating-front">★★★★★</div>
-            <div class="star-rating-back">☆☆☆☆☆</div>
-          </div>
-        </div>
-
-        <div class="skill-item">
-          <img class="skill-box" src="{% static 'img/css_django_portfolio.jpg' %}"  height="100" hspace="50">
-          <div class="language">CSS</div>
-          <div class="star-rating">
-            <div class="css-star-rating-front">★★★★★</div>
-            <div class="star-rating-back">☆☆☆☆☆</div>
-          </div>
-        </div>
-
-        <div class="skill-item">
-          <img class="skill-box" src="{% static 'img/js_django_portfolio.jpg' %}"  height="100" hspace="50">
-          <div class="language">JavaScript</div>
-          <div class="star-rating">
-            <div class="javaccript-star-rating-front">★★★★★</div>
-            <div class="star-rating-back">☆☆☆☆☆</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="skill-itms-two messages-font-size-skills">
-        <div class="skill-item">
-          <img class="skill-box" src="{% static 'img/python_django_portfolio.jpg' %}"  height="102" hspace="50">
-          <div class="language">Python</div>
-          <div class="star-rating">
-            <div class="python-star-rating-front">★★★★★</div>
-            <div class="star-rating-back">☆☆☆☆☆</div>
-          </div>
-        </div>
-
-        <div class="skill-item">
-          <img class="skill-box" src="{% static 'img/dj_django_portfolio.jpg' %}"  height="100" hspace="50">
-          <div class="language">Django</div>
-          <div class="star-rating">
-            <div class="django-star-rating-front">★★★★★</div>
-            <div class="star-rating-back">☆☆☆☆☆</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="skill-itms-three messages-font-size-skills">
-        <div class="skill-item">
-          <img class="skill-box" src="{% static 'img/basketball_django_portfolio.jpg' %}"  height="100" hspace="50">
-          <div class="language">Basketball</div>
-          <div class="star-rating">
-            <div class="basketball-star-rating-front">★★★★★</div>
-            <div class="star-rating-back">☆☆☆☆☆</div>
-          </div>
-        </div>
-
-        <div class="skill-item">
-          <img class="skill-box" src="{% static 'img/patissier_django_portfolio.jpg' %}"  height="100" hspace="50">
-          <div class="language">Patissier</div>
-          <div class="star-rating">
-            <div class="patissier-star-rating-front">★★★★★</div>
-            <div class="star-rating-back">☆☆☆☆☆</div>
-          </div>
-        </div>
-
-        <div class="skill-item">
-          <img class="skill-box" src="{% static 'img/business_django_portfolio.jpg' %}"  height="100" hspace="50">
-          <div class="language">Sales</div>
-          <div class="star-rating">
-            <div class="business-star-rating-front">★★★★★</div>
-            <div class="star-rating-back">☆☆☆☆☆</div>
-          </div>
-        </div>
-      </div> -->
 
   </section>
 
@@ -213,5 +114,5 @@
   </div>
 
 </article>
-<!-- </div> -->
+
 {% endblock %}
