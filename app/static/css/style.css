@@ -52,7 +52,7 @@ html{
 
 
 #menu-center ul {
-  padding: 4px;
+  margin: 4px;
 }
 
 #menu-center ul li {
@@ -130,12 +130,12 @@ a {
 }
 
 .navigation-font-size{
-  font-size: 70px;
+  font-size: 4.4rem;
 }
 
 .messages-font-size{
-  font-size: 21px;
-  line-height: 35px;
+  font-size: 1.3rem;;
+  line-height: 1.7;
 }
 
 .messages-font-size-skills{
@@ -153,18 +153,18 @@ a {
 }
 
 .title{
-  font-size: 90px;
+  font-size: 6rem;
 }
 
 .subtitle{
-  font-size: 36px;
+  font-size: 2.6rem;
   font-weight: bold;
 }
 
 .works-itms-one{
   /* display: flex; */
   /* justify-content: center; */
-  margin: 10px 0 0 0;
+  margin-top: 20px;
 }
 
 .img-profile{
@@ -273,6 +273,7 @@ a {
 
 ul{
   margin-bottom: 0;
+  padding-left: 0;
 }
 
 
@@ -521,7 +522,7 @@ box-shadow: 0 0 4px rgba(0, 0, 0, .14), 0 4px 8px rgba(0, 0, 0, .28);
 
 .contacts {
   max-width: 500px;
-  margin-top: 78px;
+  margin-top: 6rem;
 }
 
 .form-control:focus {
@@ -622,25 +623,25 @@ box-shadow: 0 0 4px rgba(0, 0, 0, .14), 0 4px 8px rgba(0, 0, 0, .28);
 
 @media screen and (max-width: 768px) {
 .title{ 
-  font-size: 70px;
+  font-size: 4rem;
 }
 }
   
 @media screen and (max-width: 480px) {
 .title{ 
-  font-size: 54px;
+  font-size: 3rem;
 }
 }
 
 @media screen and (max-width: 768px) {
 .subtitle{ 
-  font-size: 28px;
+  font-size: 1.75rem;
 }
 }
   
 @media screen and (max-width: 480px) {
 .subtitle{ 
-  font-size: 22px;
+  font-size: 1.32rem;
 }
 }
 
@@ -674,7 +675,7 @@ box-shadow: 0 0 4px rgba(0, 0, 0, .14), 0 4px 8px rgba(0, 0, 0, .28);
 
 @media screen and (max-width: 768px) {
 .messages-font-size{ 
-  font-size: 1rem;
+  font-size: 1.2rem;
   line-height: 1.5;
 }
 }
