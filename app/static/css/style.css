@@ -62,7 +62,7 @@ html{
 }
 
 .active {
-  font-size: 21px;
+  font-size: 1.37rem;
   color: rgb(126, 126, 126);
   text-decoration: none;
   line-height: 52px;
@@ -85,9 +85,9 @@ header {
 
 a {
   text-decoration: none;
-  font-size: 20px;
+  font-size: 1.25rem;
   color: rgb(0, 157, 255);
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .center{
@@ -169,14 +169,14 @@ a {
 
 .img-profile{
   margin: 25px 0 20px 0;
-  width:200px;
-	height:200px;
+  width: 12.5rem;
+	height: 12.5rem;
 	object-fit:cover;
-  border-radius:50%;
+  border-radius: 50%;
 }
 
 .skill-box{
-  border-radius:50%;
+  border-radius: 50%;
   height: 6rem;
 }
 
@@ -590,6 +590,13 @@ box-shadow: 0 0 4px rgba(0, 0, 0, .14), 0 4px 8px rgba(0, 0, 0, .28);
   font-weight: bold;
 }
 
+.row{
+  --bs-gutter-x: 0rem;
+}
+
+.space{
+  --bs-gutter-x: 1.5rem;
+}
 
 
 
@@ -598,15 +605,28 @@ box-shadow: 0 0 4px rgba(0, 0, 0, .14), 0 4px 8px rgba(0, 0, 0, .28);
 
 @media screen and (max-width: 768px) {
 .font-small{ 
-  font-size: 18px;
+  font-size: 1.13rem;
 }
 }
 
 @media screen and (max-width: 480px) {
 .font-small{ 
-  font-size: 15px;
+  font-size: 0.88rem;
 }
 }
+
+@media screen and (max-width: 768px) {
+.active{ 
+  font-size: 1.25rem;
+}
+}
+
+@media screen and (max-width: 480px) {
+.active{ 
+  font-size: 0.96rem;
+}
+}
+
 
 @media screen and (max-width: 768px) {
 #menu-center ul li{ 
@@ -648,27 +668,27 @@ box-shadow: 0 0 4px rgba(0, 0, 0, .14), 0 4px 8px rgba(0, 0, 0, .28);
 
 @media screen and (max-width: 768px) {
 .navigation-font-size{ 
-  font-size: 55px;
+  font-size: 3.45rem;
 }
 }
   
 @media screen and (max-width: 480px) {
 .navigation-font-size{ 
-  font-size: 42px;
+  font-size: 2.65rem;
 }
 }
 
 @media screen and (max-width: 768px) {
 .img-profile{ 
-  width: 156px;
-  height: 156px;
+  width: 9.7rem;
+  height: 9.7rem;
 }
 }
   
 @media screen and (max-width: 480px) {
 .img-profile{ 
-  width: 122px;
-  height: 122px;
+  width: 7.6rem;
+  height: 7.6rem;
 }
 }
 
@@ -753,6 +773,5 @@ box-shadow: 0 0 4px rgba(0, 0, 0, .14), 0 4px 8px rgba(0, 0, 0, .28);
   font-size: 1rem;
 }
 }
-
 
 
